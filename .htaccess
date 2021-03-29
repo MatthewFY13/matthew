@@ -1,0 +1,18 @@
+#Carga tu propia página de error 404
+
+ErrorDocument 404 /404.html
+
+
+#Bloquear archivos
+
+Options All -Indexes
+
+#Proteger el .htaccess
+
+<files .htaccess>
+
+order allow,deny
+
+deny from all
+
+</files>
